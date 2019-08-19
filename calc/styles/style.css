@@ -1,0 +1,92 @@
+@font-face {
+    font-family: digital-7;
+    src: url('../fonts/digital-7.ttf');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#calc{
+    border-radius: 20px;
+    width: auto;
+    max-width: 280px;
+    margin: 20px;
+    border: 2px solid #808080b5;
+    padding: 5px 20px;
+    background: #252120;
+}
+.calc-top{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.calc-top_header{
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+}
+.calc-top_model{
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+.calc-top_model:after{
+    text-transform: lowercase;
+    content: 'auto power off';
+    position: absolute;
+    width: max-content;
+    left: -20px;
+    top: 20px;
+    font-size: 18px;
+    border-top: 2px solid white;
+}
+.input-block{
+    margin-bottom: 10px;
+}
+.input-block__input-field{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 45px;
+    padding: 0 5px;
+    background: #76aeb4;
+    font-family: digital-7;
+}
+.inner-control__sub-panel__button{
+    width: 40px;
+    height: 35px;
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #000000;
+    border-color: #8e8e8e;
+}
+.inner-control__sub-panel__button:hover{
+    background: #333
+}
+.inner-control{
+    display: flex;
+}
+.inner-control__sub-panel{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.plus-button{
+    height: 80px;
+}
+.clear-button{
+    background: #c62726;
+    border-color: #c62726;
+}
+.clear-button:hover{
+    background: #af0302;
+}
